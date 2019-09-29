@@ -1,0 +1,46 @@
+# CHANGELOG
+All notable changes to Cheap Descent Calculator will be documented in this file.
+
+## [2.02] 2019-09-08 el_gargantuan <elgargantuangaming@gmail.com>
+### Added
+  - The starting vertical height of the "closed pop out HUD" may be raised or lowered permanantly via the script (see new variable "closedHUDStartingHeight" at the top of file)
+  - The "closed pop out HUD" is now click-draggable to temporarily (does not persist through reloads) reposition the vertical height closed HUD height
+
+### Changed
+  - Target Altitude selection adjusts by 100 feet below 18000 instead of 500.
+  - Target Altitude can be set as low as 100 feet
+
+## [2.0] 2018-08-31 el_gargantuan <elgargantuangaming@gmail.com>
+### Added
+  - Adjustable Descent Angle with "+/-" buttons for user
+  - Angle only allowed as low as 1 degree and as high as 10 degrees
+  - Angle changes by rate of 0.1 degree
+  - Click and drag full size HUD to reposition anywhere on screen
+  - Added mouse scrolling abilities over the respective "+/-"
+  - Small set of color options (changeable in script config)
+  - official changelog
+
+### Changed
+  - new Top of Descent Calculation changes as descends closer to target altitude
+  - Target Altitude now sets as low as 500 ft
+  - Click to Hide  click spot is now a red box in upper right corner of HUD
+  - Closed HUD locks to the left side of screen
+  - Closed HUD only appears when mouse is near left edge
+  - Added "Cheap Descent" to closed HUD
+  - Moved config options to very top of script
+  - Updated/cleaned up documentation in the script
+  - Default color is no longer red
+  - Some code reorganization
+  - set_length() at beginning of each draw() in case other flywithlua scripts change
+  - some general changes to dragging to "play nice" with other flywithlua scripts
+
+## [1.0] 2018-08-24 el_gargantuan <elgargantuangaming@gmail.com>
+### Initial Upload
+  - User selectable +/- clickable buttons
+  - These adjust desired target altitude
+  - Calculates a 3 degree descent rate
+  - Calculates a Top of Descent (T/D) distance to target in nautical miles
+  - Added rows to display values to user
+  - Adjusted click-spots for closing HUD
+  - Adjusted click-spot for opening HUD
+  - Added copyright license information
